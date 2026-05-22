@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Harshinee Nadiminty — ASU graduate student focused on data science, NLP, RAG systems, backend systems, and campus leadership." />
+  <title>Harshinee Nadiminty | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body data-lens="technical" data-theme="dark">
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <div class="page">
+    <header class="topbar">
+      <a href="#home" class="brand" aria-label="Home">
+        <span class="logo">
+        <img src="assets/profile/logo.jpg" alt="Harshinee logo">
+      </span>
+        <span>Harshinee</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#spotlight">lens</a>
+        <a href="#projects">projects</a>
+        <a href="#experience">experience</a>
+        <a href="#skills">skills</a>
+        <a href="#fun-facts">lore</a>
+        <a href="gallery.html">hobbies</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <button class="theme-toggle" id="themeToggle" type="button">light</button>
+        <div class="status"><span class="dot"></span> Tempe, AZ</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="window hero-window fade-in">
+          <div class="window-bar">
+            <div class="traffic"><span></span><span></span><span></span></div>
+            <span>/archive</span>
+          </div>
+
+          <div class="hero-main">
+            <p class="terminal-line">$ identity → data science · AI/NLP · campus archive</p>
+
+            <h1>
+              Harshinee<br>
+              <span class="outline-text">Nadiminty</span>
+            </h1>
+
+            <p class="hero-copy">
+              I build intelligent, user-focused systems across NLP, RAG, data science, machine learning, and backend systems — while staying deeply involved in ASU campus communities.
+            </p>
+
+            <div class="hero-mini-profile">
+              <p class="profile-kicker">currently</p>
+              <h2>M.S. Data Science @ ASU</h2>
+              <p>NLP, RAG systems, data analysis, backend systems, and campus leadership.</p>
+
+              <div class="profile-mini-tags">
+                <span>Tempe, AZ</span>
+                <span>Visual learner</span>
+                <span>Goth/grunge girlie</span>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <a class="btn primary" href="#spotlight">Pick a Lens</a>
+              <a class="btn" href="gallery.html">Hobbies</a>
+              <a class="btn" href="mailto:hnadimin@asu.edu">Email Me</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="window photo-only-card fade-in">
+          <img src="assets/profile/profile-1.jpg" alt="Harshinee at ASU">
+        </div>
+
+        <div class="hero-lower-grid fade-in">
+          <div class="stats">
+            <div class="stat"><strong>3.5</strong><span>ASU GPA</span></div>
+            <div class="stat"><strong>5+</strong><span>technical projects</span></div>
+            <div class="stat"><strong>1K+</strong><span>event attendees</span></div>
+            <div class="stat"><strong>5K+</strong><span>students reached</span></div>
+          </div>
+
+          <div class="window resume-download-card">
+            <p class="eyebrow">download</p>
+            <h2>Resume files</h2>
+            <p>Choose the version that fits the opportunity.</p>
+
+            <div class="resume-download-actions">
+              <a class="btn primary" href="Harshinee_Nadiminty_Technical_Resume.pdf" download>Technical Resume</a>
+              <a class="btn" href="Harshinee_Nadiminty_NonTechnical_Resume.pdf" download>Campus Resume</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="window section-pad fade-in" id="spotlight">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">choose your view</p>
+            <h2 class="section-title">Pick a lens</h2>
+          </div>
+          <div class="section-chip">technical · campus</div>
+        </div>
+
+        <div class="mode-panel">
+          <div class="mode-copy">
+            <h3 id="modeTitle">Technical Lens</h3>
+            <p id="modeText">
+              Projects, AI systems, RAG pipelines, NLP workflows, backend APIs, data cleaning, model evaluation, and technical research work.
+            </p>
+          </div>
+
+          <div class="mode-actions">
+            <button class="mode-btn active" data-mode="technical">Technical</button>
+            <button class="mode-btn" data-mode="campus">Campus</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="window section-pad fade-in lens-section technical-section active-lens" id="projects" data-section="technical">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">technical lens</p>
+            <h2 class="section-title">Projects</h2>
+          </div>
+          <div class="section-chip">AI · NLP · data · backend</div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/projects/rag.jpg" alt="RAG system for NLP research papers project preview">
+            </div>
+            <div class="project-content">
+              <h3>RAG System for NLP Research Papers</h3>
+              <p>Built an end-to-end retrieval pipeline over 1,000+ arXiv NLP papers and 13,000+ chunks using FAISS + BM25 hybrid retrieval and embedding evaluation.</p>
+              <div class="pills">
+                <span class="pill">Python</span>
+                <span class="pill">FAISS</span>
+                <span class="pill">SciBERT</span>
+                <span class="pill">BM25</span>
+                <span class="pill">RAG</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/projects/recipe.jpg" alt="Smart Recipe Recommender project preview">
+            </div>
+            <div class="project-content">
+              <h3>Smart Recipe Recommender</h3>
+              <p>Created a content-based recipe recommendation system using TF-IDF, Sentence-BERT, synonym mapping, lemmatization, allergen filtering, and dietary preference logic.</p>
+              <div class="pills">
+                <span class="pill">Sentence-BERT</span>
+                <span class="pill">TF-IDF</span>
+                <span class="pill">NLP</span>
+                <span class="pill">Scikit-learn</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/projects/chatbot.jpg" alt="Hindi NLP chatbot project preview">
+            </div>
+            <div class="project-content">
+              <h3>Hindi NLP Chatbot for NEP</h3>
+              <p>Developed a Hindi chatbot for National Education Policy queries using preprocessing, tokenization, normalization, LangChain, ChromaDB, and vector retrieval.</p>
+              <div class="pills">
+                <span class="pill">LangChain</span>
+                <span class="pill">ChromaDB</span>
+                <span class="pill">Hindi NLP</span>
+                <span class="pill">Retrieval</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/projects/sung-geet.jpg" alt="Sung-Geet emotion-based music recommender project preview">
+            </div>
+            <div class="project-content">
+              <h3>Sung-Geet Music Recommender</h3>
+              <p>Designed a CNN-based emotion recognition system using MobileNet and MTCNN with a Flask app for mood-based Hindi and English music recommendations.</p>
+              <div class="pills">
+                <span class="pill">CNN</span>
+                <span class="pill">MobileNet</span>
+                <span class="pill">MTCNN</span>
+                <span class="pill">Flask</span>
+                <span class="pill">Published</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/projects/portfolio.jpg" alt="Personal portfolio website project preview">
+            </div>
+            <div class="project-content">
+              <h3>Personal Portfolio Website</h3>
+              <p>Designed and built a responsive personal portfolio with technical and campus lenses, hobbies page, custom cursor interactions, glassmorphism cards, and project showcases.</p>
+              <div class="pills">
+                <span class="pill">HTML</span>
+                <span class="pill">CSS</span>
+                <span class="pill">JavaScript</span>
+                <span class="pill">Responsive Design</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <img src="assets/projects/backend-api.jpg" alt="Backend API project preview">
+            </div>
+            <div class="project-content">
+              <h3>Research Backend Systems</h3>
+              <p>Developed backend features during an internship at Nanobios Lab, IIT Bombay, including Django REST APIs, SQLite structures, forms, calculators, and ML-integrated components.</p>
+              <div class="pills">
+                <span class="pill">Django</span>
+                <span class="pill">Django REST</span>
+                <span class="pill">SQLite</span>
+                <span class="pill">APIs</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="window section-pad fade-in lens-section campus-section" id="campus" data-section="campus">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">campus lens</p>
+            <h2 class="section-title">Campus Participation</h2>
+          </div>
+          <div class="section-chip">events · outreach · leadership</div>
+        </div>
+
+        <div class="campus-grid">
+          <div class="campus-card">
+            <img class="campus-img" src="assets/campus/acm.jpg" alt="ACM ASU communications and student outreach">
+            <h3>ACM Communications</h3>
+            <div class="campus-meta">5,000+ students</div>
+            <p>Manage digital communications, event promotion, student-facing announcements, and outreach for one of ASU’s largest technology organizations.</p>
+          </div>
+
+          <div class="campus-card">
+            <img class="campus-img" src="assets/campus/hindu-yuva.jpg" alt="Hindu Yuva ASU event leadership">
+            <h3>Incoming Events Lead</h3>
+            <div class="campus-meta">Hindu Yuva · Fall 2026</div>
+            <p>Selected to lead large-scale cultural event coordination, volunteer support, scheduling, logistics, and attendee experience.</p>
+          </div>
+
+          <div class="campus-card">
+            <img class="campus-img" src="assets/campus/globehack.jpg" alt="GlobeHack ASU event operations">
+            <h3>GlobeHack Volunteer</h3>
+            <div class="campus-meta">1,000+ participants</div>
+            <p>Supported operations and managed check-in for 300+ participants at a technical hackathon with sponsors, students, and organizers.</p>
+          </div>
+
+          <div class="campus-card">
+            <img class="campus-img" src="assets/campus/basant-mela.jpg" alt="Basant Mela and Hindu Yuva campus event">
+            <h3>Milan Committee</h3>
+            <div class="campus-meta">Hindu Yuva</div>
+            <p>Supported Basant Mela and cultural events through setup, check-ins, food distribution, activity support, and multi-organization coordination.</p>
+          </div>
+
+          <div class="campus-card">
+            <img class="campus-img" src="assets/campus/navratri.jpg" alt="Navratri Nights ASU event">
+            <h3>Event Volunteer</h3>
+            <div class="campus-meta">Hindu Yuva & ISSC · ASU</div>
+            <p>Supported high-attendance events including Ganesh Chaturthi and Navratri Nights through check-in, crowd management, logistics, and attendee support.</p>
+          </div>
+
+          <div class="campus-card">
+          <img class="campus-img" src="assets/campus/fashion-forward.jpg" alt="Fashion Forward ASU sustainable fashion event">
+          <h3>Fashion Forward Volunteer</h3>
+          <div class="campus-meta">$9K raised · sustainable fashion</div>
+          <p>Supported full-day event operations by folding, sorting, weighing, and organizing donated clothing, helping maintain racks and back-of-house flow for a high-impact sustainability event.</p>
+        </div>
+        </div>
+      </section>
+
+      <section class="window section-pad fade-in" id="experience">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">background</p>
+            <h2 class="section-title">Experience</h2>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="date">08/2025 — Present</div>
+            <div>
+              <h3>M.S. Data Science, Analytics & Engineering</h3>
+              <div class="org">Arizona State University · Tempe, AZ</div>
+              <ul>
+                <li>Current GPA: 3.5. Focused on data science, NLP, analytics, machine learning, and scalable systems.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="date">12/2023 — 04/2024</div>
+            <div>
+              <h3>Backend Developer Intern</h3>
+              <div class="org">Nanobios Lab, IIT Bombay</div>
+              <ul>
+                <li>Developed backend systems using Django REST Framework to support research applications and improve platform reliability.</li>
+                <li>Designed SQLite database structures, REST APIs, forms, and calculators to enable secure multi-user functionality and organized data handling.</li>
+                <li>Collaborated on backend architecture, documentation, ML-integrated features, and OpenAI-based components.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="date">07/2020 — 05/2024</div>
+            <div>
+              <h3>B.Tech Computer Engineering</h3>
+              <div class="org">University of Mumbai</div>
+              <ul>
+                <li>Graduated with CGPA 8.6/10 and completed projects in NLP, computer vision, backend development, and recommendation systems.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="window section-pad fade-in" id="skills">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">toolkit</p>
+            <h2 class="section-title">Skills</h2>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-box">
+            <h3>Programming</h3>
+            <div class="pills">
+              <span class="pill">Python</span>
+              <span class="pill">SQL</span>
+              <span class="pill">HTML</span>
+              <span class="pill">Git</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h3>NLP & RAG</h3>
+            <div class="pills">
+              <span class="pill">LangChain</span>
+              <span class="pill">FAISS</span>
+              <span class="pill">ChromaDB</span>
+              <span class="pill">Sentence-BERT</span>
+              <span class="pill">SciBERT</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h3>ML / DL</h3>
+            <div class="pills">
+              <span class="pill">TensorFlow</span>
+              <span class="pill">Keras</span>
+              <span class="pill">Scikit-learn</span>
+              <span class="pill">CNN</span>
+              <span class="pill">MobileNet</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h3>Backend & Data</h3>
+            <div class="pills">
+              <span class="pill">Django</span>
+              <span class="pill">Django REST</span>
+              <span class="pill">SQLite</span>
+              <span class="pill">MySQL</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h3>Data Tools</h3>
+            <div class="pills">
+              <span class="pill">Pandas</span>
+              <span class="pill">NumPy</span>
+              <span class="pill">Power BI</span>
+              <span class="pill">Tableau</span>
+              <span class="pill">Excel</span>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <h3>Campus</h3>
+            <div class="pills">
+              <span class="pill">Event Ops</span>
+              <span class="pill">Student Outreach</span>
+              <span class="pill">Canva</span>
+              <span class="pill">Slack</span>
+              <span class="pill">Zoom</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="window section-pad fade-in" id="fun-facts">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">soft lore</p>
+            <h2 class="section-title">Fun facts</h2>
+          </div>
+          <div class="section-chip">little things · big personality</div>
+        </div>
+
+        <div class="facts-grid">
+          <article class="fact-card">
+            <span>01</span>
+            <h3>Leftie brain</h3>
+            <p>I’m left-handed, which feels very on-brand for how I think, create, and notice details.</p>
+          </article>
+
+          <article class="fact-card">
+            <span>02</span>
+            <h3>Language side quest</h3>
+            <p>I’ve been learning Korean and Japanese because I love languages, culture, music, shows, and tiny translation details.</p>
+          </article>
+
+          <article class="fact-card">
+            <span>03</span>
+            <h3>Visual learner</h3>
+            <p>I understand things best when I can see them — diagrams, colors, layouts, examples, and systems that look like other things.</p>
+          </article>
+
+          <article class="fact-card">
+            <span>04</span>
+            <h3>Goth/grunge comfort zone</h3>
+            <p>I’m into muted colors, goth and grunge themes, messy textures, soft darkness, and designs that feel a little haunted but still warm.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="window section-pad fade-in" id="contact">
+        <p class="eyebrow">contact</p>
+        <h2 class="contact-big">
+          Let’s<br>
+          <span class="outline-text">connect.</span>
+        </h2>
+
+        <div class="contact-links">
+          <a class="btn primary" href="mailto:hnadimin@asu.edu">hnadimin@asu.edu</a>
+          <a class="btn" href="https://github.com/hnadiminty" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/harshinee-nadiminty-2433b8249/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="tel:+16232819088">Phone</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">Harshinee Nadiminty · Portfolio · 2026</footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
